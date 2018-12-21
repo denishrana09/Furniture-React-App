@@ -1,0 +1,41 @@
+.image-row{
+    margin-top: 20px;
+    margin-bottom: 0;
+    align-items: center;
+    height: 55rem;
+    margin-right: 0;
+    margin-left: 0;
+    .image-col{
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        position: relative;
+        .SofaImage{
+            position: absolute;
+            width: 100%;
+            margin: 0;
+            overflow: hidden;
+            background-color: #000;
+            margin: auto 0;
+        }
+        .image-center{
+            top: 25%;
+        }
+    }
+}
+
+@media only screen and (max-width: 1200px){
+
+}
+
+@media only screen and (max-width: 1023px){
+
+}
+
+@media only screen and (max-width: 767px){
+
+}
+
+@media only screen and (max-width: 480px){
+
+}

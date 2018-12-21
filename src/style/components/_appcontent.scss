@@ -1,0 +1,110 @@
+.AppContent{
+    margin-top: 20px;
+    padding-left: 10px;
+    // background: rgb(214, 206, 206);
+
+    .content-nav-div{
+        .app-content-nav{
+            text-align: center;
+            margin-top: 10px;
+            margin-bottom: 0;
+            padding: 0;
+            li {
+                list-style: none;
+                display: inline-block;
+
+                .active-anchor{
+                    color: #FF7865;
+                }
+            }
+            .filterButton{
+                color: black;
+                font-family:arial;
+                text-transform: uppercase;
+                font-weight: 600;
+                margin: 0;
+                padding: 9px 18px 9px;
+                text-decoration: none;
+                font-size: 12px;
+                background: none;
+                border: none;
+                box-shadow: none;
+                &:hover,&:active{
+                    color: #FF7865;
+                }
+            }
+        }
+    }
+
+    .product-row{
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .product-col{
+        padding: 0;
+    }
+
+    .product-col-right{
+        padding-left: 10px;
+    }
+
+    .showMoreButton{
+        margin-top: 20px;
+        margin-bottom: 10px;
+        padding: 10px;
+        width: 250px;
+        box-shadow: none;
+        background: #FF7865;
+        text-shadow: none;
+
+        &:hover,&:active{
+            background: rgb(255, 112, 94);
+        }
+    }
+}
+
+@media only screen and (max-width: 1200px){
+    .AppContent{
+        .content-nav-div{
+            .app-content-nav{
+                .filterButton {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1023px){
+    .AppContent{
+        .content-nav-div{
+            .app-content-nav{
+                .filterButton {
+                    font-size: 12px;
+                }
+            }
+        }
+        .product-row{
+            margin-top: 0;
+            text-align: center;
+        }
+    }
+}
+
+@media only screen and (max-width: 767px){
+
+}
+
+@media only screen and (max-width: 480px){
+    .AppContent{
+        .content-nav-div{
+            .app-content-nav{
+                .filterButton {
+
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}
