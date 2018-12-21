@@ -22,14 +22,16 @@
             padding-top: 25px;
             text-align: center;
             margin: 0 auto;
-            background: rgb(255, 255, 255);
+            background: rgb(253, 253, 253);
 
 
             .Navbar-Nav{
                 text-align: left;
-                margin: 0 auto;
+                float: none;
                 font-size: 95%;
                 font-weight: 600;
+                padding-left: 15px;
+                display: inline-block;
 
                 .App-Nav-Item{
                     a:hover,a:active{
@@ -97,36 +99,6 @@
                 font-weight: bold;
             }
 
-            .Navbar-Collapse{
-                padding-top: 25px;
-                text-align: center;
-                margin: 0 auto;
-                background: rgb(255, 255, 255);
-
-
-                .Navbar-Nav{
-                    text-align: left;
-                    margin: 0 auto;
-                    font-size: 95%;
-                    font-weight: 600;
-
-                    .App-Nav-Item{
-                        a:hover,a:active{
-                            color: #777;
-                        }
-
-                        .Nav-Active{
-                            color: #FF7865;
-                        }
-
-                        .Nav-Item-Span{
-                            &:hover,&:active{
-                                color: rgb(255, 112, 94);
-                            }
-                        }
-                    }
-                }
-            }
         }
     }
 }
@@ -135,14 +107,18 @@
     .Navbar{
         .App-Navbar{
             .Navbar-Collapse{
+                padding-top: 25px;
+                text-align: left;
+                margin: 0 auto;
+                background: rgb(253, 253, 253);
                 .Navbar-Nav{
                     .App-Nav-Item{
-                        background: rgb(250, 250, 250);
+                        background: rgb(253, 253, 253);
                     }
                 }
                 .Navbar-Right{
                     .App-Nav-Item{
-                        background: rgb(250, 250, 250);
+                        background: rgb(253, 253, 253);
                         margin-left: -5px;
                         margin-right: 15px;
                     }

@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { Carousel,Image } from 'react-bootstrap';
-import SofaImage1 from '../images/sofa1.jpeg';
-import SofaImage2 from '../images/sofa2.jpeg';
-import SofaImage3 from '../images/sofa3.jpeg';
+import SofaImage1 from '../images/sofa1.jpg';
+import SofaImage2 from '../images/sofa2.jpg';
+import SofaImage3 from '../images/sofa3.jpg';
 
 //Add in Index.html -> remaining bootstrap files
 class AppCarousel extends Component {

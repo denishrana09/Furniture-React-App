@@ -1,15 +1,15 @@
 import React, { Component } from 'react';
 import { Row,Col,Image,Button } from 'react-bootstrap';
-import ProductImage1 from '../images/product1.jpg';
-import ProductImage2 from '../images/product2.jpg';
-import ProductImage3 from '../images/product3.jpg';
-import ProductImage4 from '../images/product4.jpg';
-import ProductImage5 from '../images/product5.jpg';
-import ProductImage6 from '../images/product6.jpg';
-import ProductImage7 from '../images/product7.jpg';
-import ProductImage8 from '../images/product8.jpg';
-import ProductImage9 from '../images/product9.jpg';
-import ProductImage10 from '../images/product10.jpg';
+import ProductImage1 from '../images/product1.jpeg';
+import ProductImage2 from '../images/product2.jpeg';
+import ProductImage3 from '../images/product3.jpeg';
+import ProductImage4 from '../images/product4.jpeg';
+import ProductImage5 from '../images/product5.jpeg';
+import ProductImage6 from '../images/product6.jpeg';
+import ProductImage7 from '../images/product7.jpeg';
+import ProductImage8 from '../images/product8.jpeg';
+import ProductImage9 from '../images/product9.jpeg';
+import ProductImage10 from '../images/product10.jpeg';
 // import { Button,Checkbox,FormGroup } from 'react-bootstrap';
 
 class Product extends Component {
