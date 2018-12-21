@@ -4,18 +4,31 @@ import ProductImage1 from '../images/product1.jpg';
 import ProductImage2 from '../images/product2.jpg';
 import ProductImage3 from '../images/product3.jpg';
 import ProductImage4 from '../images/product4.jpg';
+import ProductImage5 from '../images/product5.jpg';
+import ProductImage6 from '../images/product6.jpg';
+import ProductImage7 from '../images/product7.jpg';
+import ProductImage8 from '../images/product8.jpg';
+import ProductImage9 from '../images/product9.jpg';
+import ProductImage10 from '../images/product10.jpg';
 // import { Button,Checkbox,FormGroup } from 'react-bootstrap';
 
 class Product extends Component {
     render() {
-        let ProductImage = ProductImage4;
-        let num = this.props.imageNum;
-        if(num === 1) ProductImage = ProductImage1;
-        else if(num === 2) ProductImage = ProductImage2;
-        else if(num === 3) ProductImage = ProductImage3;
-        else ProductImage = ProductImage4;
+        let ProductImage = ProductImage10;
+        let num = this.props.image;
+        if(num === "1") ProductImage = ProductImage1;
+        else if(num === "2") ProductImage = ProductImage2;
+        else if(num === "3") ProductImage = ProductImage3;
+        else if(num === "4") ProductImage = ProductImage4;
+        else if(num === "5") ProductImage = ProductImage5;
+        else if(num === "6") ProductImage = ProductImage6;
+        else if(num === "7") ProductImage = ProductImage7;
+        else if(num === "8") ProductImage = ProductImage8;
+        else if(num === "9") ProductImage = ProductImage9;
+        else ProductImage = ProductImage10;
+        let ProductClassName = "Product animated fadeIn";
         return (
-            <div className="Product">
+            <div className={ProductClassName}>
             <Row className="show-grid item-row">
                 <Col className="product-left-col" md={6}>
                     <div>
@@ -26,13 +39,13 @@ class Product extends Component {
                 <Col className="product-right-col" md={6}>
                     <Row>
                         <Col md={6} sm={12}>
-                            <h5 className="heading-content patino">Patino</h5>
+                            <h5 className="heading-content patino">{this.props.name}</h5>
                         </Col>
                         <Col md={6} sm={12}>
-                            <h5 className="heading-content">356$</h5>
+                            <h5 className="heading-content">{this.props.price}</h5>
                         </Col>
                     </Row>
-                    <h5 className="heading-content">armchair,blue</h5>
+                    <h5 className="heading-content">{this.props.subname}</h5>
                     <h6 className="text-muted heading-content h6-class">Within 6 days</h6>
 
                     <p className="text-muted heading-content">

@@ -46,14 +46,14 @@
         transition: transform 0.5s;
 
         .ColorIcons{
+            padding-top: 10px;
             i{
-                padding: 10px;
+                padding: 7px;
             }
-            // i:hover{
-            //     font-size: 20px;
-            //     padding-top: 15px;
-            //     padding-bottom: 0;
-            // }
+            i:hover{
+                border: rgb(250, 141, 69) 1px solid;
+                border-radius: 50%;
+            }
         }
     }
 

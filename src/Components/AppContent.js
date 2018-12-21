@@ -6,16 +6,67 @@ import Product from './Product';
 class AppContent extends Component {
   constructor(props){
     super(props);
-    this.state = { filter:'' };
+    this.state = { filter:'all' };
     this.handleFilterChange = this.handleFilterChange.bind(this);
   }
 
   handleFilterChange(e){
-    console.log(e.target.value);
+    filteredProducts = [];
+    filteredProducts1 = [];
+    filteredProducts2 = [];
     this.setState({filter : e.target.value});
   }
 
   render() {
+    const filterText = this.state.filter;
+
+    if(filterText === "all"){
+      PRODUCTS.forEach((product,index) => {
+        filteredProducts.push(
+          <Product key={index}
+            category={product.category}
+            price={product.price}
+            name={product.name}
+            subname={product.subname}
+            image={product.image}/>
+          );
+      });
+    }else{
+      filteredProducts = [];
+      PRODUCTS.forEach((product,index) => {
+        if(product.category.indexOf(filterText)===-1){
+          return;
+        }
+        filteredProducts.push(
+          <Product key={index}
+            category={product.category}
+            price={product.price}
+            name={product.name}
+            subname={product.subname}
+            image={product.image}/>
+          );
+      });
+    }
+
+    // console.log(filteredProducts);
+
+    for (var i=0;i<filteredProducts.length;i++){
+      if ((i+2)%2===0) {
+        filteredProducts2.push(filteredProducts[i]);
+      }
+      else {
+        filteredProducts1.push(filteredProducts[i]);
+      }
+    }
+
+    if(filteredProducts1.length < filteredProducts2.length){
+      filteredProductsTemp = filteredProducts2;
+      filteredProducts2 = filteredProducts1;
+      filteredProducts1 = filteredProductsTemp;
+    }
+    // console.log(filteredProducts1);
+    // console.log(filteredProducts2);
+
     return (
       <div className="AppContent">
         <Grid>
@@ -29,18 +80,10 @@ class AppContent extends Component {
           </div>
           <Row className="show-grid product-row">
             <Col md={6} sm={6} className="product-col">
-              <Product imageNum={1}/>
-              <Product imageNum={2}/>
-              <Product imageNum={3}/>
-              <Product imageNum={4}/>
-              <Product imageNum={1}/>
+              {filteredProducts1}
             </Col>
             <Col md={6} sm={6} className="product-col product-col-right">
-              <Product imageNum={4}/>
-              <Product imageNum={3}/>
-              <Product imageNum={1}/>
-              <Product imageNum={2}/>
-              <Product imageNum={3}/>
+              {filteredProducts2}
             </Col>
           </Row>
           <Row className="show-grid">
@@ -56,75 +99,79 @@ class AppContent extends Component {
   }
 }
 
+let filteredProducts = [];
+let filteredProducts1 = [];
+let filteredProducts2 = [];
+let filteredProductsTemp = [];
 const PRODUCTS = [{
   category: 'new',
-  price: '386$',
+  price: "386\u20AC",
   name: 'Patino',
   subname: 'armchair,blue',
   image: '1'
 },
 {
   category: 'offers',
-  price: '386$',
+  price: '350\u20AC',
   name: 'Patino',
   subname: 'armchair,blue',
   image: '2'
 },
 {
   category: 'new',
-  price: '386$',
+  price: '150\u20AC',
   name: 'Patino',
   subname: 'armchair,blue',
   image: '3'
 },
 {
   category: 'offers',
-  price: '386$',
+  price: '250\u20AC',
   name: 'Patino',
   subname: 'armchair,blue',
   image: '4'
 },
 {
   category: 'in10days',
-  price: '386$',
+  price: '200\u20AC',
   name: 'Patino',
   subname: 'armchair,blue',
-  image: '1'
+  image: '5'
 },
 {
   category: 'in10days',
-  price: '386$',
+  price: '230\u20AC',
   name: 'Patino',
   subname: 'armchair,blue',
-  image: '2'
+  image: '6'
 },
 {
   category: 'offers',
-  price: '386$',
+  price: '355\u20AC',
   name: 'Patino',
   subname: 'armchair,blue',
-  image: '3'
+  image: '7'
 },
 {
   category: 'new',
-  price: '386$',
+  price: '170\u20AC',
   name: 'Patino',
   subname: 'armchair,blue',
-  image: '4'
+  image: '8'
 },
 {
   category: 'in10days',
-  price: '386$',
+  price: '190\u20AC',
   name: 'Patino',
   subname: 'armchair,blue',
-  image: '4'
+  image: '9'
 },
 {
   category: 'new',
-  price: '386$',
+  price: '230\u20AC',
   name: 'Patino',
   subname: 'armchair,blue',
-  image: '3'
+  image: '10'
 },
 ];
 
