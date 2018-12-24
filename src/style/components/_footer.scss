@@ -1,0 +1,46 @@
+.Footer{
+    .Footer-Grid{
+        padding-bottom: 10px;
+        border-bottom: 1px solid #777;
+        margin-bottom: 10px;
+    }
+    li{
+        list-style: none;
+        padding: 3px;
+        margin: 0;
+    }
+    h5{
+        padding: 0;
+        margin: 0;
+        font-weight: 600;
+    }
+    h3{
+        text-align: center;
+        padding-bottom: 5px;
+        font-weight: 600;
+    }
+
+    .Form-Col{
+        margin-top: 15px;
+        h4{
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        .Form-Control{
+            margin: 5px;
+            border: 0;
+            box-shadow: none;
+            border-bottom: 1px solid rgb(250, 128, 97);
+            border-radius: 0;
+        }
+        .Form-Button{
+            width: 100%;
+            margin-top: 5px;
+            border-color: none;
+            background-image: none;
+            background: rgb(250, 128, 97);
+            text-shadow: none;
+            color: white;
+        }
+    }
+}

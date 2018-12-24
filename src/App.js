@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import { Grid,Row,Col } from 'react-bootstrap';
+import { Grid, Row, Col } from 'react-bootstrap';
 import AppNavbar from './Components/AppNavbar';
 import AppCarousel from './Components/AppCarousel';
 import AppLeftSidebar from './Components/AppLeftSidebar';
@@ -12,20 +12,20 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <AppNavbar/>
-        <AppCarousel/>
+        <AppNavbar />
+        <AppCarousel />
         <Grid className="left-right-sidebar">
           <Row className="show-grid">
             <Col className="left-side-bar" md={3} sm={3}>
-              <AppLeftSidebar/>
+              <AppLeftSidebar />
             </Col>
             <Col className="left-side-bar" md={9} sm={9}>
-              <AppContent/>
+              <AppContent />
             </Col>
           </Row>
         </Grid>
-        <Collection/>
-        <Footer/>
+        <Collection />
+        <Footer />
       </div>
     );
   }

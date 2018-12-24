@@ -2,7 +2,7 @@
   "name": "furniture-app",
   "version": "0.1.0",
   "private": true,
-  "homepage":"./",
+  "homepage": "./",
   "dependencies": {
     "react": "^16.6.3",
     "react-bootstrap": "^0.32.4",
