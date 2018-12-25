@@ -88,9 +88,10 @@ class AppLeftSidebar extends Component {
         return (
         <div>
             <div>
-                <Button className="clickButton" onClick={this.onSideViewClick}>Click Me</Button>
+                <Button className="clickButton" onClick={this.onSideViewClick}>Filters</Button>
             </div>
             <div className={LeftSideClass}>
+                <div className="pull-right Filter-Close"><i className="fas fa-2x fa-times"></i></div>
                 <h1 className="SidebarColorsHeading text-muted">Colors
                     <div className="SidebarButton">
                         <Button className="ColorButton" onClick={this.onColorButtonClick}>
