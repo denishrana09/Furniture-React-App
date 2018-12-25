@@ -48,6 +48,8 @@
             }
             .Main-Image-Col{
                 padding: 0;
+                height: 100%;
+
             }
             .SofaImage{
                 width: 100%;
@@ -58,23 +60,106 @@
             .Main-Image{
                 margin:0;
                 width: 100%;
+                height: 100%;
             }
         }
     }
 }
 
-@media only screen and (max-width: 1200px){
+@media (min-width: 1281px) {
 
 }
 
-@media only screen and (max-width: 1023px){
+@media (min-width: 1025px) and (max-width: 1280px) {
 
 }
 
-@media only screen and (max-width: 767px){
+@media (min-width: 769px) and (max-width: 1024px) {
 
 }
 
-@media only screen and (max-width: 480px){
+@media (min-width: 481px) and (max-width: 768px) {
+    .AppCarousel{
+        .SofaImageItem{
+            .Image-Grid{
+                .Main-Content-Col{
+                    text-align: left;
+                    margin: 0;
+                    padding: 30px;
+                    h3{
+                        font-weight: 600;
+                        color: #FF7865;
+                    }
+                    h1{
+                        font-weight: 800;
+                        .sale-span{
+                            font-size: 5rem;
+                        }
+                    }
+                    .PercentOff-Image{
+                        width: 70px;
+                        height: 70px;
+                        margin-top: -30px;
+                    }
+                    .Explore-Button{
+                        margin-top: 7px;
+                        border: 0;
+                        border-radius: 0;
+                        box-shadow: none;
+                        background-image: none;
+                        color: white;
+                        background: #FF7865;
+                        width: 200px;
+                        height: 50px;
+                        font-style: none;
+                        font-size: 15px;
+                        text-shadow: none;
+                    }
+                }
+            }
+        }
+    }
+}
 
+@media (min-width: 320px) and (max-width: 480px) {
+    .AppCarousel{
+        .SofaImageItem{
+            .Image-Grid{
+                .Main-Content-Col{
+                    text-align: left;
+                    margin: 0;
+                    padding: 30px;
+                    h3{
+                        font-weight: 600;
+                        color: #FF7865;
+                    }
+                    h1{
+                        font-weight: 800;
+                        .sale-span{
+                            font-size: 4rem;
+                        }
+                    }
+                    .PercentOff-Image{
+                        width: 70px;
+                        height: 70px;
+                        margin-top: -30px;
+                    }
+                    .Explore-Button{
+                        margin-top: 7px;
+                        border: 0;
+                        border-radius: 0;
+                        box-shadow: none;
+                        background-image: none;
+                        color: white;
+                        background: #FF7865;
+                        width: 200px;
+                        height: 50px;
+                        font-style: none;
+                        font-size: 15px;
+                        text-shadow: none;
+                    }
+                }
+            }
+        }
+    }
 }
