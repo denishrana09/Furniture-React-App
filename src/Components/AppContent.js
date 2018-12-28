@@ -64,18 +64,20 @@ class AppContent extends Component {
       filteredProducts2 = filteredProducts1;
       filteredProducts1 = filteredProductsTemp;
     }
-    // console.log(filteredProducts1);
-    // console.log(filteredProducts2);
 
     return (
       <div className="AppContent">
         <Grid>
           <div className="content-nav-div">
             <ul className="app-content-nav">
-              <li><Button className="filterButton" onClick={this.handleFilterChange} value="all">ALL</Button></li>
-              <li><Button className="filterButton" onClick={this.handleFilterChange} value="new">NEW</Button></li>
-              <li><Button className="filterButton" onClick={this.handleFilterChange} value="offers">OFFERS</Button></li>
-              <li><Button className="filterButton" onClick={this.handleFilterChange} value="in10days">DELIVERY IN 10 DAYS</Button></li>
+              <li><Button className={"filterButton "+ (this.state.filter === "all" ? "active" : "")}
+               onClick={this.handleFilterChange} value="all">ALL</Button></li>
+              <li><Button className={"filterButton "+ (this.state.filter === "new" ? "active" : "")}
+               onClick={this.handleFilterChange} value="new">NEW</Button></li>
+              <li><Button className={"filterButton "+ (this.state.filter === "offers" ? "active" : "")}
+               onClick={this.handleFilterChange} value="offers">OFFERS</Button></li>
+              <li><Button className={"filterButton "+ (this.state.filter === "in10days" ? "active" : "")}
+               onClick={this.handleFilterChange} value="in10days">DELIVERY IN 10 DAYS</Button></li>
             </ul>
           </div>
           <Row className="show-grid product-row">

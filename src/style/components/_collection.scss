@@ -1,12 +1,24 @@
 .slick-class{
-    padding: 40px;
+    padding: 10px;
     .slick-slide {
         -webkit-transition: all 0.3s ease-out;
         transition: all 0.3s ease-out;
+        transform: scale(0.8);
     }
-    .slick-center {
-        -webkit-transform: scale(1.3);
-        transform: scale(1.3);
+    .slick-center{
+        z-index: 100;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+    .slider-inner{
+        .SofaImage{
+            margin:0;
+            width: 100%;
+            height: auto;
+        }
+    }
+    .slick-dots li button {
+        font-family: 'slick';
     }
 }
 

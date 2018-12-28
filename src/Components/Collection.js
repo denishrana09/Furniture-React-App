@@ -14,25 +14,43 @@ class Collection extends React.Component {
             centerPadding: "60px",
             slidesToShow: 3,
             speed: 500,
-            autoplay:true
+            autoplay:true,
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 3,
+                        infinite: true,
+                        dots: true
+                    }
+                },
+                {
+                  breakpoint: 480,
+                  settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                  }
+                }
+              ]
         };
 	return (
-		<div className="container-fluid slick-class">
+		<div className="container slick-class">
             <Slider className="slider-class" {...settings}>
                 <div className="slider-inner">
-                    <h3><Image className="SofaImage" src={SofaImage1} responsive /></h3>
+                    <Image className="SofaImage" src={SofaImage1}/>
                 </div>
                 <div className="slider-inner">
-                    <h3><Image className="SofaImage" src={SofaImage2} responsive /></h3>
+                    <Image className="SofaImage" src={SofaImage2} />
                 </div>
                 <div className="slider-inner">
-                    <h3><Image className="SofaImage" src={SofaImage3} responsive /></h3>
+                    <Image className="SofaImage" src={SofaImage3} />
                 </div>
                 <div className="slider-inner">
-                    <h3><Image className="SofaImage" src={SofaImage1} responsive /></h3>
+                    <Image className="SofaImage" src={SofaImage1} />
                 </div>
 				<div className="slider-inner">
-                    <h3><Image className="SofaImage" src={SofaImage2} responsive /></h3>
+                    <Image className="SofaImage" src={SofaImage2} />
                 </div>
             </Slider>
       </div>

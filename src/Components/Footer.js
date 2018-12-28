@@ -11,7 +11,7 @@ class Footer extends Component {
             <Col md={4} className="">
               <Row>
                 <h3>Helpful Links</h3>
-                <Col sm={6} xs={6}>
+                <Col sm={6} xs={12}>
                   <ul>
                     <li>About us</li>
                     <li>Delivery and Return policy</li>
@@ -19,7 +19,7 @@ class Footer extends Component {
                     <li>Service for professionals</li>
                   </ul>
                 </Col>
-                <Col sm={6} xs={6}>
+                <Col sm={6} xs={12}>
                   <ul>
                     <li>About us</li>
                     <li>Delivery and Return policy</li>
@@ -32,7 +32,7 @@ class Footer extends Component {
             <Col md={4} className="">
               <Row>
                 <h3>Contact Info</h3>
-                <Col sm={6} xs={6}>
+                <Col sm={6} xs={12}>
                   <ul>
                     <li><h5>Oxford(UK)</h5></li>
                     <li>1-3 Abbey Street</li>
@@ -41,7 +41,7 @@ class Footer extends Component {
                     <li>OX29 4TB</li>
                   </ul>
                 </Col>
-                <Col sm={6} xs={6}>
+                <Col sm={6} xs={12}>
                   <ul>
                     <li><h5>Wlanut, CA(USA)</h5></li>
                     <li>340 S Lemon Ave #3358</li>

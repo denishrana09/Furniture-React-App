@@ -7,7 +7,7 @@ class Info extends Component {
 			<div className="Info container">
 				<Grid className="Info-Grid">
 					<div className="pull-left text-muted">
-						&copy;2018 Mass Impressions. Designed by Tran Mau Tri Tam</div>
+						&copy;2018 Mass Impressions. Designed by Tran Mau Tri Tam, clone by Denish</div>
 					<div className="pull-right text-muted">
 						<ul>
 							<li><i className="fab fa-facebook-f"></i></li>

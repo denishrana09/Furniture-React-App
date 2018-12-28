@@ -4,8 +4,8 @@
 .AppLeftSidebar{
     margin-top: 20px;
     padding-top: 10px;
+    height: 100%;
     // background: rgb(253, 250, 250);
-
     .Filter-Close{
         display: none;
     }
@@ -51,14 +51,29 @@
         width: 60%;
         transition: transform 0.5s;
 
-        .ColorIcons{
+        .Icon-Row-1{
             padding-top: 10px;
-            i{
-                padding: 7px;
-            }
-            i:hover{
-                border: rgb(250, 141, 69) 1px solid;
-                border-radius: 50%;
+            padding-bottom: 5px;
+        }
+        .ColorIcons{
+            a{
+                text-decoration: none;
+                i{
+                    padding: 4%;
+                    border: rgb(255, 255, 255) 1px solid;
+                    border-radius: 50%;
+                    border-spacing: 1px 1px;
+                }
+                i:hover{
+                    border: rgb(250, 141, 69) 1px solid;
+                    border-radius: 50%;
+                    border-spacing: 1px 1px;
+                }
+                .activeCircle{
+                    border: rgb(250, 141, 69) 1px solid;
+                    border-radius: 50%;
+                    border-spacing: 1px 1px;
+                }
             }
         }
     }
@@ -145,6 +160,35 @@
             margin: 0 auto;
             padding-top: 10px;
             width: 60%;
+            .mySlider {
+                -webkit-appearance: none;
+                width: 100%;
+                height: 5px;
+                background: #d3d3d3;
+                outline: none;
+                opacity: 0.7;
+                -webkit-transition: .2s;
+                transition: opacity .2s;
+            }
+            .mySlider:hover {
+                opacity: 1;
+            }
+            .mySlider::-webkit-slider-thumb {
+                -webkit-appearance: none;
+                appearance: none;
+                width: 12px;
+                border-radius: 50%;
+                height: 12px;
+                background: rgb(255, 105, 86);
+                cursor: pointer;
+            }
+            .mySlider::-moz-range-thumb {
+                width: 12px;
+                height: 12px;
+                border-radius: 50%;
+                background: rgb(255, 101, 81);
+                cursor: pointer;
+            }
         }
     }
 
@@ -164,11 +208,16 @@
         width: 60%;
         padding: 20px;
         margin: 0 auto;
-        h6{
-            font-size: 10px;
+        margin-top: 10px;
+        a{
+            text-decoration: none;
+            font-size: 13px;
             i{
                 font-size: 15px;
                 margin-left: 20px;
+            }
+            &:hover{
+                color: rgb(182, 85, 73);
             }
         }
     }
@@ -182,6 +231,7 @@
 
 @media (min-width: 1281px) {
     .AppLeftSidebarRemove{
+        height: 100%;
         .Filter-Close{
             display: none;
         }
@@ -231,14 +281,22 @@
             width: 60%;
             transition: transform 0.5s;
 
-            .ColorIcons{
+            .Icon-Row-1{
                 padding-top: 10px;
+                padding-bottom: 5px;
+            }
+
+            .ColorIcons{
                 i{
-                    padding: 7px;
+                    padding: 4%;
+                    border: rgb(255, 255, 255) 1px solid;
+                    border-radius: 50%;
+                    border-spacing: 1px 1px;
                 }
                 i:hover{
                     border: rgb(250, 141, 69) 1px solid;
                     border-radius: 50%;
+                    border-spacing: 1px 1px;
                 }
             }
         }
@@ -325,6 +383,35 @@
                 margin: 0 auto;
                 padding-top: 10px;
                 width: 60%;
+                .mySlider {
+                    -webkit-appearance: none;
+                    width: 100%;
+                    height: 5px;
+                    background: #d3d3d3;
+                    outline: none;
+                    opacity: 0.7;
+                    -webkit-transition: .2s;
+                    transition: opacity .2s;
+                }
+                .mySlider:hover {
+                    opacity: 1;
+                }
+                .mySlider::-webkit-slider-thumb {
+                    -webkit-appearance: none;
+                    appearance: none;
+                    width: 12px;
+                    border-radius: 50%;
+                    height: 12px;
+                    background: rgb(255, 105, 86);
+                    cursor: pointer;
+                }
+                .mySlider::-moz-range-thumb {
+                    width: 12px;
+                    height: 12px;
+                    border-radius: 50%;
+                    background: rgb(255, 101, 81);
+                    cursor: pointer;
+                }
             }
         }
 
@@ -373,6 +460,7 @@
     .AppLeftSidebarRemove{
         margin-top: 20px;
         padding-top: 10px;
+        height: 100%;
         // background: rgb(253, 250, 250);
 
         .Filter-Close{
@@ -420,14 +508,22 @@
             width: 60%;
             transition: transform 0.5s;
 
-            .ColorIcons{
+            .Icon-Row-1{
                 padding-top: 10px;
+                padding-bottom: 5px;
+            }
+
+            .ColorIcons{
                 i{
-                    padding: 7px;
+                    padding: 4%;
+                    border: rgb(255, 255, 255) 1px solid;
+                    border-radius: 50%;
+                    border-spacing: 1px 1px;
                 }
                 i:hover{
                     border: rgb(250, 141, 69) 1px solid;
                     border-radius: 50%;
+                    border-spacing: 1px 1px;
                 }
             }
         }
@@ -514,6 +610,35 @@
                 margin: 0 auto;
                 padding-top: 10px;
                 width: 60%;
+                .mySlider {
+                    -webkit-appearance: none;
+                    width: 100%;
+                    height: 5px;
+                    background: #d3d3d3;
+                    outline: none;
+                    opacity: 0.7;
+                    -webkit-transition: .2s;
+                    transition: opacity .2s;
+                }
+                .mySlider:hover {
+                    opacity: 1;
+                }
+                .mySlider::-webkit-slider-thumb {
+                    -webkit-appearance: none;
+                    appearance: none;
+                    width: 12px;
+                    border-radius: 50%;
+                    height: 12px;
+                    background: rgb(255, 105, 86);
+                    cursor: pointer;
+                }
+                .mySlider::-moz-range-thumb {
+                    width: 12px;
+                    height: 12px;
+                    border-radius: 50%;
+                    background: rgb(255, 101, 81);
+                    cursor: pointer;
+                }
             }
         }
 
@@ -558,50 +683,15 @@
     ##Screen = B/w 481px to 767px
   */
 
-@media (min-width: 481px) and (max-width: 767px) {
-
-}
-
-  /*
-    ##Device = Most of the Smartphones Mobiles (Portrait)
-    ##Screen = B/w 320px to 479px
-  */
-
-@media (min-width: 320px) and (max-width: 480px) {
-    .clickButton{
-        display: inline;
-        background-color: rgb(245, 245, 245);
-        // margin-left: 50%;
-        width: 60%;
-        background: white;
-    }
-
+@media (min-width: 481px) and (max-width: 768px) {
     .AppLeftSidebar{
-        display: none;
-    }
-
-    .AppLeftSidebarRemove{
-        width: 250px;
-        height: 100%; /* 100% Full-height */
-        position: fixed; /* Stay in place */
-        z-index: 1; /* Stay on top */
-        top: 0; /* Stay at the top */
-        left: 0;
-        background-color: rgb(253, 253, 253);
-        overflow-x: hidden; /* Disable horizontal scroll */
-        padding-top: 100px; /* Place content 60px from the top */
-        transition: 0.5s;
-        transition: margin-left .5s;
-
-        margin-top: 100px;
+        height: 100%;
+        margin-top: 20px;
         padding-top: 10px;
         // background: rgb(253, 250, 250);
-
         .Filter-Close{
-            padding: 5px;
-            padding-right: 10px;
+            display: none;
         }
-
         h1{
             font-size: 130%;
         }
@@ -644,14 +734,29 @@
             width: 60%;
             transition: transform 0.5s;
 
-            .ColorIcons{
+            .Icon-Row-1{
                 padding-top: 10px;
-                i{
-                    padding: 7px;
-                }
-                i:hover{
-                    border: rgb(250, 141, 69) 1px solid;
-                    border-radius: 50%;
+                padding-bottom: 5px;
+            }
+            .ColorIcons{
+                a{
+                    text-decoration: none;
+                    i{
+                        padding: 4%;
+                        border: rgb(255, 255, 255) 1px solid;
+                        border-radius: 50%;
+                        border-spacing: 1px 1px;
+                    }
+                    i:hover{
+                        border: rgb(250, 141, 69) 1px solid;
+                        border-radius: 50%;
+                        border-spacing: 1px 1px;
+                    }
+                    .activeCircle{
+                        border: rgb(250, 141, 69) 1px solid;
+                        border-radius: 50%;
+                        border-spacing: 1px 1px;
+                    }
                 }
             }
         }
@@ -738,6 +843,507 @@
                 margin: 0 auto;
                 padding-top: 10px;
                 width: 60%;
+                .mySlider {
+                    -webkit-appearance: none;
+                    width: 100%;
+                    height: 5px;
+                    background: #d3d3d3;
+                    outline: none;
+                    opacity: 0.7;
+                    -webkit-transition: .2s;
+                    transition: opacity .2s;
+                }
+                .mySlider:hover {
+                    opacity: 1;
+                }
+                .mySlider::-webkit-slider-thumb {
+                    -webkit-appearance: none;
+                    appearance: none;
+                    width: 12px;
+                    border-radius: 50%;
+                    height: 12px;
+                    background: rgb(255, 105, 86);
+                    cursor: pointer;
+                }
+                .mySlider::-moz-range-thumb {
+                    width: 12px;
+                    height: 12px;
+                    border-radius: 50%;
+                    background: rgb(255, 101, 81);
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .SellOff{
+            margin: 0 auto;
+            margin-top: 10px;
+            width: 60%;
+            text-align: left;
+
+            .SidebarSellOffHeading{
+                display: inline;
+            }
+        }
+        .ClearAll{
+            color: #FF7865;
+            width: 80%;
+            padding: 10px;
+            margin: 0 auto;
+            margin-top: 20px;
+            a{
+                text-decoration: none;
+                font-size: 13px;
+                i{
+                    font-size: 15px;
+                    margin-left: 20px;
+                }
+                &:hover{
+                    color: rgb(182, 85, 73);
+                }
+            }
+        }
+    }
+
+    .AppLeftSidebarRemove{
+        height: 100%;
+        margin-top: 20px;
+        padding-top: 10px;
+        // background: rgb(253, 250, 250);
+        .Filter-Close{
+            display: none;
+        }
+        h1{
+            font-size: 130%;
+        }
+
+        h4{
+            font-size: 110%;
+            font-weight: 600;
+        }
+
+        .hide{
+            display: none;
+        }
+
+        .make-small{
+            font-size: 10px;
+        }
+
+        .SidebarColorsHeading{
+            display: inline;
+            text-align: left;
+
+            .SidebarButton{
+                display: inline;
+                margin: 0 0 0 30%;
+
+                .ColorButton{
+                        margin-left: auto;
+                        margin-right: 0;
+                        background: transparent;
+                        border: 0px;
+                        box-shadow: none;
+                }
+            }
+        }
+
+        .Colors{
+            margin: 0 auto;
+            margin-top: 10px;
+            border-top: 1px solid rgb(216, 216, 216);
+            width: 60%;
+            transition: transform 0.5s;
+
+            .Icon-Row-1{
+                padding-top: 10px;
+                padding-bottom: 5px;
+            }
+            .ColorIcons{
+                a{
+                    text-decoration: none;
+                    i{
+                        padding: 4%;
+                        border: rgb(255, 255, 255) 1px solid;
+                        border-radius: 50%;
+                        border-spacing: 1px 1px;
+                    }
+                    i:hover{
+                        border: rgb(250, 141, 69) 1px solid;
+                        border-radius: 50%;
+                        border-spacing: 1px 1px;
+                    }
+                    .activeCircle{
+                        border: rgb(250, 141, 69) 1px solid;
+                        border-radius: 50%;
+                        border-spacing: 1px 1px;
+                    }
+                }
+            }
+        }
+
+        .SidebarFiltersHeading{
+            display: inline;
+            text-align: left;
+
+            .SidebarFilterButton{
+                display: inline;
+                margin: 0 0 0 30%;
+
+                .FilterButton{
+                        margin-left: auto;
+                        margin-right: 0;
+                        background: transparent;
+                        border: 0px;
+                        box-shadow: none;
+                }
+            }
+        }
+
+        .Filters{
+            margin: 0 auto;
+            margin-top: 10px;
+            border-top: 1px solid rgb(216, 216, 216);
+            width: 60%;
+            transition: transform 0.5s;
+
+            h4{
+                display: block;
+                padding-left: 10px;
+                text-align: left;
+            }
+
+            .checkbox-group{
+                padding-left: 20%;
+                text-align: left;
+                font-size: 15px;
+                padding-top: 5px;
+
+                .checkboxes{
+                    font-size: 80%;
+                }
+            }
+        }
+
+        .SidebarSeparator{
+            padding-top: 20px;
+        }
+
+        .SidebarPriceHeading{
+            display: inline;
+            text-align: left;
+
+            .SidebarPriceButton{
+                display: inline;
+                margin: 0 0 0 30%;
+
+                .PriceButton{
+                        margin-left: auto;
+                        margin-right: 0;
+                        background: transparent;
+                        border: 0px;
+                        box-shadow: none;
+                }
+            }
+        }
+
+        .Price{
+            margin: 0 auto;
+            margin-top: 10px;
+            border-top: 1px solid rgb(216, 216, 216);
+            width: 60%;
+            transition: transform 0.5s;
+
+            .PriceIcons{
+                i{
+                    padding: 20px;
+                }
+            }
+
+            .AppSlider{
+                margin: 0 auto;
+                padding-top: 10px;
+                width: 60%;
+                .mySlider {
+                    -webkit-appearance: none;
+                    width: 100%;
+                    height: 5px;
+                    background: #d3d3d3;
+                    outline: none;
+                    opacity: 0.7;
+                    -webkit-transition: .2s;
+                    transition: opacity .2s;
+                }
+                .mySlider:hover {
+                    opacity: 1;
+                }
+                .mySlider::-webkit-slider-thumb {
+                    -webkit-appearance: none;
+                    appearance: none;
+                    width: 12px;
+                    border-radius: 50%;
+                    height: 12px;
+                    background: rgb(255, 105, 86);
+                    cursor: pointer;
+                }
+                .mySlider::-moz-range-thumb {
+                    width: 12px;
+                    height: 12px;
+                    border-radius: 50%;
+                    background: rgb(255, 101, 81);
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .SellOff{
+            margin: 0 auto;
+            margin-top: 10px;
+            width: 60%;
+            text-align: left;
+
+            .SidebarSellOffHeading{
+                display: inline;
+            }
+        }
+        .ClearAll{
+            color: #FF7865;
+            width: 80%;
+            padding: 10px;
+            margin: 0 auto;
+            margin-top: 20px;
+            a{
+                text-decoration: none;
+                font-size: 13px;
+                i{
+                    font-size: 15px;
+                    margin-left: 20px;
+                }
+                &:hover{
+                    color: rgb(182, 85, 73);
+                }
+            }
+        }
+    }
+}
+
+  /*
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .clickButton{
+        display: inline;
+        background-color: rgb(245, 245, 245);
+        // margin-left: 50%;
+        width: 60%;
+        background: white;
+    }
+
+    .AppLeftSidebar{
+        display: none;
+    }
+
+    .AppLeftSidebarRemove{
+        width: 250px;
+        height: 100%; /* 100% Full-height */
+        position: fixed; /* Stay in place */
+        z-index: 150; /* Stay on top */
+        top: 0; /* Stay at the top */
+        left: 0;
+        background-color: rgb(253, 253, 253);
+        overflow-x: hidden; /* Disable horizontal scroll */
+        padding-top: 100px; /* Place content 60px from the top */
+        transition: 0.5s;
+        transition: margin-left .5s;
+
+        margin-top: 10px;
+        padding-top: 20px;
+        // background: rgb(253, 250, 250);
+
+        .Filter-Close{
+            border: none;
+            box-shadow: none;
+            background-image: none;
+            padding: 5px;
+            padding-right: 10px;
+        }
+
+        h1{
+            font-size: 130%;
+        }
+
+        h4{
+            font-size: 110%;
+            font-weight: 600;
+        }
+
+        .hide{
+            display: none;
+        }
+
+        .make-small{
+            font-size: 10px;
+        }
+
+        .SidebarColorsHeading{
+            display: inline;
+            text-align: left;
+            padding-left: 20px;
+
+            .SidebarButton{
+                display: inline;
+                margin: 0 0 0 30%;
+
+                .ColorButton{
+                        margin-left: auto;
+                        margin-right: 0;
+                        background: transparent;
+                        border: 0px;
+                        box-shadow: none;
+                }
+            }
+        }
+
+        .Colors{
+            margin: 0 auto;
+            margin-top: 10px;
+            border-top: 1px solid rgb(216, 216, 216);
+            width: 60%;
+            transition: transform 0.5s;
+
+            .Icon-Row-1{
+                padding-top: 10px;
+                padding-bottom: 5px;
+            }
+
+            .ColorIcons{
+                i{
+                    padding: 4%;
+                    border: rgb(255, 255, 255) 1px solid;
+                    border-radius: 50%;
+                    border-spacing: 1px 1px;
+                }
+                i:hover{
+                    border: rgb(250, 141, 69) 1px solid;
+                    border-radius: 50%;
+                    border-spacing: 1px 1px;
+                }
+            }
+        }
+
+        .SidebarFiltersHeading{
+            display: inline;
+            text-align: left;
+
+            .SidebarFilterButton{
+                display: inline;
+                margin: 0 0 0 30%;
+
+                .FilterButton{
+                        margin-left: auto;
+                        margin-right: 0;
+                        background: transparent;
+                        border: 0px;
+                        box-shadow: none;
+                }
+            }
+        }
+
+        .Filters{
+            margin: 0 auto;
+            margin-top: 10px;
+            border-top: 1px solid rgb(216, 216, 216);
+            width: 60%;
+            transition: transform 0.5s;
+
+            h4{
+                display: block;
+                padding-left: 10px;
+                text-align: left;
+            }
+
+            .checkbox-group{
+                padding-left: 20%;
+                text-align: left;
+                font-size: 15px;
+                padding-top: 5px;
+
+                .checkboxes{
+                    font-size: 80%;
+                }
+            }
+        }
+
+        .SidebarSeparator{
+            padding-top: 20px;
+        }
+
+        .SidebarPriceHeading{
+            display: inline;
+            text-align: left;
+
+            .SidebarPriceButton{
+                display: inline;
+                margin: 0 0 0 30%;
+
+                .PriceButton{
+                        margin-left: auto;
+                        margin-right: 0;
+                        background: transparent;
+                        border: 0px;
+                        box-shadow: none;
+                }
+            }
+        }
+
+        .Price{
+            margin: 0 auto;
+            margin-top: 10px;
+            border-top: 1px solid rgb(216, 216, 216);
+            width: 60%;
+            transition: transform 0.5s;
+
+            .PriceIcons{
+                i{
+                    padding: 20px;
+                }
+            }
+
+            .AppSlider{
+                margin: 0 auto;
+                padding-top: 10px;
+                width: 60%;
+                .mySlider {
+                    -webkit-appearance: none;
+                    width: 100%;
+                    height: 5px;
+                    background: #d3d3d3;
+                    outline: none;
+                    opacity: 0.7;
+                    -webkit-transition: .2s;
+                    transition: opacity .2s;
+                }
+                .mySlider:hover {
+                    opacity: 1;
+                }
+                .mySlider::-webkit-slider-thumb {
+                    -webkit-appearance: none;
+                    appearance: none;
+                    width: 12px;
+                    border-radius: 50%;
+                    height: 12px;
+                    background: rgb(255, 105, 86);
+                    cursor: pointer;
+                }
+                .mySlider::-moz-range-thumb {
+                    width: 12px;
+                    height: 12px;
+                    border-radius: 50%;
+                    background: rgb(255, 101, 81);
+                    cursor: pointer;
+                }
             }
         }
 
@@ -754,7 +1360,7 @@
 
         .ClearAll{
             color: #FF7865;
-            width: 60%;
+            width: 90%;
             padding: 20px;
             margin: 0 auto;
             h6{
@@ -765,5 +1371,15 @@
                 }
             }
         }
+    }
+}
+
+@media (max-width: 320px){
+    .AppLeftSidebar{
+        display: none;
+    }
+
+    .AppLeftSidebarRemove{
+        height: 100%;
     }
 }

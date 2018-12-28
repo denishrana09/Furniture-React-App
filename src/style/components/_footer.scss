@@ -1,4 +1,5 @@
 .Footer{
+    margin-top: 20px;
     .Footer-Grid{
         padding-bottom: 10px;
         border-bottom: 1px solid #777;
@@ -41,6 +42,16 @@
             background: rgb(250, 128, 97);
             text-shadow: none;
             color: white;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .Footer{
+        .Footer-Grid{
+            h4{
+                text-align: center;
+            }
         }
     }
 }

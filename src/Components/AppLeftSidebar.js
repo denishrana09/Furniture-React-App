@@ -9,14 +9,18 @@ class AppLeftSidebar extends Component {
           buttonColorActive: false,
           buttonFilterActive: false,
           buttonPriceActive: false,
-          value: 0,
-          sideView: true
+          value: 300,
+          sideView: true,
+          colorValue: ""
         };
         this.onColorButtonClick = this.onColorButtonClick.bind(this);
         this.onFilterButtonClick = this.onFilterButtonClick.bind(this);
         this.onPriceButtonClick = this.onPriceButtonClick.bind(this);
         this.handleSliderChange = this.handleSliderChange.bind(this);
         this.onSideViewClick = this.onSideViewClick.bind(this);
+
+        this.handleColorValueChange = this.handleColorValueChange.bind(this);
+        this.handleColorReset = this.handleColorReset.bind(this);
     }
 
     onColorButtonClick() {
@@ -45,6 +49,16 @@ class AppLeftSidebar extends Component {
         this.setState({
             sideView: !this.state.sideView
         });
+    }
+
+    handleColorValueChange(e){
+        let clickedLink = e.currentTarget;
+        let data = clickedLink.getAttribute('data-value');
+        this.setState({colorValue: data});
+    }
+
+    handleColorReset(){
+        this.setState({colorValue: ""});
     }
 
     render() {
@@ -91,34 +105,58 @@ class AppLeftSidebar extends Component {
                 <Button className="clickButton" onClick={this.onSideViewClick}>Filters</Button>
             </div>
             <div className={LeftSideClass}>
-                <div className="pull-right Filter-Close"><i className="fas fa-2x fa-times"></i></div>
-                <h1 className="SidebarColorsHeading text-muted">Colors
+                <Button onClick={this.onSideViewClick} className="pull-right Filter-Close"><i style={{color:"red"}} className="fas fa-times"></i></Button>
+                <h1 className="SidebarColorsHeading text-muted" onClick={this.onColorButtonClick}>Colors
                     <div className="SidebarButton">
-                        <Button className="ColorButton" onClick={this.onColorButtonClick}>
+                        <Button className="ColorButton">
                             <i className={ColorsIconClass}></i>
                         </Button>
                     </div>
                 </h1>
                 <div className={ColorsContentClass}>
-                    <div className="ColorIcons">
-                        <i className="fas fa-circle" style={{color:"rgb(241, 101, 101)"}}></i>
-                        <i className="fas fa-circle" style={{color:"rgb(116, 174, 230)"}}></i>
-                        <i className="fas fa-circle" style={{color:"rgb(129, 230, 116)"}}></i>
-                        <i className="fas fa-circle" style={{color:"rgb(105, 148, 241)"}}></i>
+                    <div className="ColorIcons Icon-Row-1">
+                        <a href="javascript:void(0)" data-value="1" onBlur={this.handleColorReset} onClick={this.handleColorValueChange}>
+                            <i className={"fas fa-circle " + (this.state.colorValue === "1" ? "activeCircle" : "")}
+                                style={{color:"rgb(241, 101, 101)"}}></i>
+                        </a>
+                        <a href="javascript:void(0)" data-value="2" onBlur={this.handleColorReset} onClick={this.handleColorValueChange}>
+                            <i className={"fas fa-circle " + (this.state.colorValue === "2" ? "activeCircle" : "")}
+                                style={{color:"rgb(116, 174, 230)"}}></i>
+                        </a>
+                        <a href="javascript:void(0)" data-value="3" onBlur={this.handleColorReset} onClick={this.handleColorValueChange}>
+                            <i className={"fas fa-circle " + (this.state.colorValue === "3" ? "activeCircle" : "")}
+                                style={{color:"rgb(129, 230, 116)"}}></i>
+                        </a>
+                        <a href="javascript:void(0)" data-value="4" onBlur={this.handleColorReset} onClick={this.handleColorValueChange}>
+                            <i className={"fas fa-circle " + (this.state.colorValue === "4" ? "activeCircle" : "")}
+                                style={{color:"rgb(105, 148, 241)"}}></i>
+                        </a>
                     </div>
                     <div className="ColorIcons">
-                        <i className="fas fa-circle" style={{color:"rgb(241, 159, 105)"}}></i>
-                        <i className="fas fa-circle" style={{color:"rgb(243, 131, 224)"}}></i>
-                        <i className="fas fa-circle" style={{color:"rgb(188, 130, 255)"}}></i>
-                        <i className="fas fa-circle" style={{color:"rgb(240, 76, 76)"}}></i>
+                        <a href="javascript:void(0)" data-value="5" onBlur={this.handleColorReset} onClick={this.handleColorValueChange}>
+                            <i className={"fas fa-circle " + (this.state.colorValue === "5" ? "activeCircle" : "")}
+                                style={{color:"rgb(241, 159, 105)"}}></i>
+                        </a>
+                        <a href="javascript:void(0)" data-value="6" onBlur={this.handleColorReset} onClick={this.handleColorValueChange}>
+                            <i className={"fas fa-circle " + (this.state.colorValue === "6" ? "activeCircle" : "")}
+                                style={{color:"rgb(243, 131, 224)"}}></i>
+                        </a>
+                        <a href="javascript:void(0)" data-value="7" onBlur={this.handleColorReset} onClick={this.handleColorValueChange}>
+                            <i className={"fas fa-circle " + (this.state.colorValue === "7" ? "activeCircle" : "")}
+                                style={{color:"rgb(188, 130, 255)"}}></i>
+                        </a>
+                        <a href="javascript:void(0)" data-value="8" onBlur={this.handleColorReset} onClick={this.handleColorValueChange}>
+                            <i className={"fas fa-circle " + (this.state.colorValue === "8" ? "activeCircle" : "")}
+                                style={{color:"rgb(240, 76, 76)"}}></i>
+                        </a>
                     </div>
                 </div>
 
                 <div className="SidebarSeparator"> </div>
 
-                <h1 className="SidebarFiltersHeading text-muted">Filters
+                <h1 className="SidebarFiltersHeading text-muted" onClick={this.onFilterButtonClick}>Filters
                     <div className="SidebarFilterButton">
-                        <Button className="FilterButton" onClick={this.onFilterButtonClick}>
+                        <Button className="FilterButton">
                             <i className={FiltersIconClass}></i>
                         </Button>
                     </div>
@@ -151,9 +189,9 @@ class AppLeftSidebar extends Component {
                 </h1>
                 <div className="SidebarSeparator"></div>
 
-                <h1 className="SidebarPriceHeading text-muted">Price
+                <h1 className="SidebarPriceHeading text-muted" onClick={this.onPriceButtonClick}>Price
                     <div className="SidebarPriceButton">
-                        <Button className="PriceButton" onClick={this.onPriceButtonClick}>
+                        <Button className="PriceButton">
                             <i className={PriceIconClass}></i>
                         </Button>
                     </div>
@@ -164,20 +202,23 @@ class AppLeftSidebar extends Component {
                             <div className="p-2" style={{display:'inline-block',float:'left'}}>1</div>
                             <div>
                                 <input
-                                id="typeinp"
+                                id="myRange"
+                                className="mySlider"
                                 type="range"
                                 min="0" max="300"
                                 value={this.state.value}
                                 onChange={this.handleSliderChange}
                                 step="1"/>
                             </div>
-                            <div className="p-2" style={{display:'inline-block',float:'left'}}>300</div>
+                            <div className="p-2" style={{display:'inline-block',float:'left'}}>
+                                {this.state.value}{"\u20AC"}
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 <div className="ClearAll">
-                    <h6>CLEAR ALL<i className="fas fa-times"></i></h6>
+                    <a href="#">CLEAR ALL&nbsp;&nbsp;<i className="fas fa-times"></i></a>
                 </div>
             </div>
         </div>
