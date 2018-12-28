@@ -1,8 +1,8 @@
 .AppCarousel{
-    // .carousel-control.left,
-    // .carousel-control.right {
-    //     display: none;
-    // }
+    .carousel-control.left,
+    .carousel-control.right {
+        display: none;
+    }
     .carousel-indicators .active {
         width: 12px;
         height: 12px;
@@ -31,61 +31,60 @@
         .Image-Grid{
             .Carousel-Content{
                 background: #FFF6F0;
-            }
-            .Main-Content-Col{
-                text-align: left;
-                margin-top: 50px;
-                padding: 40px;
-                h3{
-                    font-weight: 600;
-                    color: #FF7865;
+                display: flex;
+                .Main-Image-Col{
+                    flex-direction: column;
+                    padding: 0;
                 }
-                h1{
-                    font-weight: 800;
-                    .sale-span{
-                        font-size: 5rem;
+                .SofaImage{
+                    width: 100%;
+                    height: 100%;
+                    margin: 0;
+                    padding: 0;
+                    overflow: hidden;
+                    object-fit: fit;
+                }
+                .Main-Content-Col{
+                    flex-direction: column;
+                    text-align: left;
+                    margin-top: 10px;
+                    padding: 25px;
+                    padding-bottom: 30px;
+                    h3{
+                        font-weight: 600;
+                        color: #FF7865;
+                    }
+                    h1{
+                        font-weight: 800;
+                        .sale-span{
+                            font-size: 5rem;
+                        }
+                    }
+                    .PercentOff-Image{
+                        width: 70px;
+                        height: 70px;
+                        margin-top: -5%;
+                        margin-right: 35%;
+                    }
+                    p{
+                        width: 60%;
+                        text-align: justify;
+                    }
+                    .Explore-Button{
+                        margin-top: 20px;
+                        border: 0;
+                        border-radius: 0;
+                        box-shadow: none;
+                        background-image: none;
+                        color: white;
+                        background: #FF7865;
+                        width: 250px;
+                        height: 50px;
+                        font-style: none;
+                        font-size: 15px;
+                        text-shadow: none;
                     }
                 }
-                .PercentOff-Image{
-                    width: 70px;
-                    height: 70px;
-                    margin-top: -5%;
-                    margin-right: 35%;
-                }
-                p{
-                    width: 60%;
-                    text-align: justify;
-                }
-                .Explore-Button{
-                    margin-top: 20px;
-                    border: 0;
-                    border-radius: 0;
-                    box-shadow: none;
-                    background-image: none;
-                    color: white;
-                    background: #FF7865;
-                    width: 250px;
-                    height: 60px;
-                    font-style: none;
-                    font-size: 15px;
-                    text-shadow: none;
-                }
-            }
-            .Main-Image-Col{
-                padding: 0;
-                height: 100%;
-
-            }
-            .SofaImage{
-                width: 100%;
-                margin: 0;
-                overflow: hidden;
-                object-fit: cover;
-            }
-            .Main-Image{
-                margin:0;
-                width: 100%;
-                height: 100%;
             }
         }
     }
@@ -103,12 +102,31 @@
     .AppCarousel{
         .SofaImageItem{
             .Image-Grid{
-                .Main-Content-Col{
-                    .PercentOff-Image{
-                        width: 70px;
-                        height: 70px;
-                        margin-top: -30px;
-                        margin-right: 30%;
+                .Carousel-Content{
+                    background: #FFF6F0;
+                    display: flex;
+                    .Main-Image-Col{
+                        flex-direction: column;
+                        padding: 0;
+                    }
+                    .SofaImage{
+                        width: 100%;
+                        height: 100%;
+                        margin: 0;
+                        padding: 0;
+                        overflow: hidden;
+                        object-fit: fit;
+                    }
+                    .Main-Content-Col{
+                        margin-top: 0;
+                        margin-bottom: 20px;
+                        flex-direction: column;
+                        .PercentOff-Image{
+                            width: 70px;
+                            height: 70px;
+                            margin-top: -30px;
+                            margin-right: 30%;
+                        }
                     }
                 }
             }
@@ -120,39 +138,58 @@
     .AppCarousel{
         .SofaImageItem{
             .Image-Grid{
-                .Main-Content-Col{
-                    text-align: left;
-                    margin: 0;
-                    padding: 30px;
-                    h3{
-                        font-weight: 600;
-                        color: #FF7865;
+                .Carousel-Content{
+                    background: #FFF6F0;
+                    display: flex;
+                    .Main-Image-Col{
+                        flex-direction: column;
+                        padding: 0;
                     }
-                    h1{
-                        font-weight: 800;
-                        .sale-span{
-                            font-size: 5rem;
+                    .SofaImage{
+                        width: 100%;
+                        height: 100%;
+                        margin: 0;
+                        padding: 0;
+                        overflow: hidden;
+                        object-fit: fit;
+                    }
+                    .Main-Content-Col{
+                        flex-direction: column;
+                        text-align: left;
+                        margin: 0;
+                        padding: 30px;
+                        padding-top: 10px;
+                        margin-bottom: 20px;
+                        h3{
+                            font-weight: 600;
+                            color: #FF7865;
                         }
-                    }
-                    .PercentOff-Image{
-                        width: 70px;
-                        height: 70px;
-                        margin-top: -30px;
-                        margin-right: 10%;
-                    }
-                    .Explore-Button{
-                        margin-top: 7px;
-                        border: 0;
-                        border-radius: 0;
-                        box-shadow: none;
-                        background-image: none;
-                        color: white;
-                        background: #FF7865;
-                        width: 200px;
-                        height: 50px;
-                        font-style: none;
-                        font-size: 15px;
-                        text-shadow: none;
+                        h1{
+                            font-weight: 800;
+                            .sale-span{
+                                font-size: 5rem;
+                            }
+                        }
+                        .PercentOff-Image{
+                            width: 70px;
+                            height: 70px;
+                            margin-top: -30px;
+                            margin-right: 10%;
+                        }
+                        .Explore-Button{
+                            margin-top: 7px;
+                            border: 0;
+                            border-radius: 0;
+                            box-shadow: none;
+                            background-image: none;
+                            color: white;
+                            background: #FF7865;
+                            width: 200px;
+                            height: 50px;
+                            font-style: none;
+                            font-size: 15px;
+                            text-shadow: none;
+                        }
                     }
                 }
             }
@@ -164,39 +201,55 @@
     .AppCarousel{
         .SofaImageItem{
             .Image-Grid{
-                .Main-Content-Col{
-                    text-align: left;
-                    margin: 0;
-                    padding: 30px;
-                    h3{
-                        font-weight: 600;
-                        color: #FF7865;
+                .Carousel-Content{
+                    background: #FFF6F0;
+                    display: block;
+                    .Main-Image-Col{
+                        padding: 0;
                     }
-                    h1{
-                        font-weight: 800;
-                        .sale-span{
-                            font-size: 4rem;
+                    .SofaImage{
+                        width: 100%;
+                        height: 100%;
+                        margin: 0;
+                        padding: 0;
+                        overflow: hidden;
+                        object-fit: fit;
+                    }
+                    .Main-Content-Col{
+                        text-align: left;
+                        margin: 0;
+                        padding: 25px;
+                        margin-bottom: 15px;
+                        h3{
+                            font-weight: 600;
+                            color: #FF7865;
                         }
-                    }
-                    .PercentOff-Image{
-                        width: 70px;
-                        height: 70px;
-                        margin-top: -30px;
-                        margin-right: 5%;
-                    }
-                    .Explore-Button{
-                        margin-top: 7px;
-                        border: 0;
-                        border-radius: 0;
-                        box-shadow: none;
-                        background-image: none;
-                        color: white;
-                        background: #FF7865;
-                        width: 200px;
-                        height: 50px;
-                        font-style: none;
-                        font-size: 15px;
-                        text-shadow: none;
+                        h1{
+                            font-weight: 800;
+                            .sale-span{
+                                font-size: 4rem;
+                            }
+                        }
+                        .PercentOff-Image{
+                            width: 70px;
+                            height: 70px;
+                            margin-top: -30px;
+                            margin-right: 5%;
+                        }
+                        .Explore-Button{
+                            margin-top: 7px;
+                            border: 0;
+                            border-radius: 0;
+                            box-shadow: none;
+                            background-image: none;
+                            color: white;
+                            background: #FF7865;
+                            width: 200px;
+                            height: 50px;
+                            font-style: none;
+                            font-size: 15px;
+                            text-shadow: none;
+                        }
                     }
                 }
             }
@@ -208,16 +261,34 @@
     .AppCarousel{
         .carousel-indicators {
             bottom: -15px;
+            margin-top: 10px;
+            margin-bottom: 20px;
         }
         .SofaImageItem{
             .Image-Grid{
-                .Main-Content-Col{
-                    padding: 15px;
-                    .PercentOff-Image{
-                        width: 70px;
-                        height: 70px;
-                        margin-top: -30px;
-                        margin-right: 2%;
+                .Carousel-Content{
+                    display: block;
+                    background: #FFF6F0;
+                    .Main-Image-Col{
+                        padding: 0;
+                    }
+                    .SofaImage{
+                        width: 100%;
+                        height: 100%;
+                        margin: 0;
+                        padding: 0;
+                        overflow: hidden;
+                        object-fit: fit;
+                    }
+                    .Main-Content-Col{
+                        padding: 15px;
+                        margin-bottom: 10px;
+                        .PercentOff-Image{
+                            width: 70px;
+                            height: 70px;
+                            margin-top: -30px;
+                            margin-right: 2%;
+                        }
                     }
                 }
             }
@@ -227,14 +298,33 @@
 
 @media (max-width: 320px) {
     .AppCarousel{
+        .carousel-indicators {
+            bottom: -15px;
+        }
         .SofaImageItem{
             .Image-Grid{
-                .Main-Content-Col{
-                    .PercentOff-Image{
-                        width: 70px;
-                        height: 70px;
-                        margin-top: -30px;
-                        margin-right: 0%;
+                .Carousel-Content{
+                    background: #FFF6F0;
+                    display: block;
+                    .Main-Image-Col{
+                        padding: 0;
+                    }
+                    .SofaImage{
+                        width: 100%;
+                        height: 100%;
+                        margin: 0;
+                        padding: 0;
+                        overflow: hidden;
+                        object-fit: fit;
+                    }
+                    .Main-Content-Col{
+                        padding: 15px;
+                        .PercentOff-Image{
+                            width: 70px;
+                            height: 70px;
+                            margin-top: -30px;
+                            margin-right: 0%;
+                        }
                     }
                 }
             }

@@ -113,6 +113,7 @@ class AppLeftSidebar extends Component {
                         </Button>
                     </div>
                 </h1>
+                {/* eslint-disable */}
                 <div className={ColorsContentClass}>
                     <div className="ColorIcons Icon-Row-1">
                         <a href="javascript:void(0)" data-value="1" onBlur={this.handleColorReset} onClick={this.handleColorValueChange}>
@@ -151,7 +152,7 @@ class AppLeftSidebar extends Component {
                         </a>
                     </div>
                 </div>
-
+                {/* eslint-enable */}
                 <div className="SidebarSeparator"> </div>
 
                 <h1 className="SidebarFiltersHeading text-muted" onClick={this.onFilterButtonClick}>Filters
@@ -218,7 +219,9 @@ class AppLeftSidebar extends Component {
                 </div>
 
                 <div className="ClearAll">
+                    {/* eslint-disable  */}
                     <a href="#">CLEAR ALL&nbsp;&nbsp;<i className="fas fa-times"></i></a>
+                    {/* eslint-enable */}
                 </div>
             </div>
         </div>
